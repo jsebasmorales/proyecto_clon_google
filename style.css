@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none; 
+    color: #000000de;
+    font-size: 14px;
+}
+
+.general {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*=====NAVBAR=====*/
+
+.nav_bar {
+    width: 100vw;
+}
+
+.nav_bar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+}
+
+.nav_bar li {
+    margin: 0 10px; 
+}
+
+.nav_bar li a:hover {
+    text-decoration: underline;
+}
+
+.apps_cont {
+    padding: 5px;
+}
+
+.apps span {
+    background-color: #fff;
+}
+
+.img_profile {
+    border-radius: 50%;
+}
+
+/*=====MAIN CONTENT=====*/
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_google {
+    margin-bottom: 25px;
+    margin-top: 120px;
+}
+
+#logo {
+    width: 420px;
+}
+
+/*=====SEARCH=====*/
+
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    max-width: 580px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    padding: 0 20px;
+}
+
+.search_bar:hover {
+    box-shadow: 0px 0px 5px #d3d3d3de;
+}
+
+.icon {
+    width: 25px;
+}
+
+.search_type {
+    display: flex;
+    align-items: center;
+}
+
+.icon_mic {
+    height: 25px;
+}
+
+.icon_mic:hover {
+    cursor: pointer;
+}
+
+.icon_cam {
+    height: 20px;
+}
+
+.icon_cam:hover {
+    cursor: pointer;
+}
+
+.icon_search {
+    height: 20px;
+}
+
+.icon:hover {
+    width: 25px;
+    cursor: pointer;
+}
+
+#input-search {
+    border: none;
+    width: 500px;
+    height: 28px;
+    padding-left: 20px;
+}
+
+#input-search:focus {
+    outline: none;
+    border-right: 1px solid #d3d3d3de;
+}
+
+.search_type {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;    
+    padding-left: 20px;
+}
+
+/*=====SEARCH BTN=====*/
+
+.search_btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+#search, #lucky {
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid transparent;;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#lucky:hover {
+    border: 1px solid #dadce0
+}
+
+#search:hover {
+    border: 1px solid #dadce0
+}
+
+/*=====FOOTER=====*/
+
+.footer {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    background-color: #f2f2f2;
+}
+
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.country p {
+    color: #70757a;
+}
+
+.about {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    
+}
+
+.about_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.about_left li {
+    padding: 15px;
+}
+
+.about_left li a {
+    color: #70757a;
+}
+
+.about_left li a:hover {
+    text-decoration: underline;
+}
+
+.about_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.about_right li {
+    padding: 15px;
+}
+
+.about_right li a {
+    color: #70757a;
+}
+
+.about_right li a:hover {
+    text-decoration: underline;
+}
+
+
+/*=====MEDIA QUERIES=====*/
+
+@media screen and (max-width: 1200px) {
+    /*=====FOOTER=====*/
+
+    .about {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    /*=====FOOTER=====*/
+
+    .about {
+        flex-direction: column; 
+    }
+
+    .about_left {
+        justify-content: center;
+    }
+
+    .about_right {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    /*=====SEARCH=====*/
+
+    .search_bar {
+        width: auto;
+        margin: 0 10px;
+        justify-content: space-around;
+    }
+
+    #input-search {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    /*=====MAIN CONTENT=====*/
+    .main_content {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    #logo {
+        max-width: 300px;
+        margin: 0 10px;
+    }
+
+    /*=====SEARCH=====*/
+
+    .search_bar {
+        width: auto;
+        margin: 0 10px;
+        justify-content: space-around;
+    }
+
+    #input-search {
+        width: auto;
+    }
+
+    /*=====FOOTER=====*/
+
+    .about_left {
+        flex-wrap: wrap;
+    }
+}
