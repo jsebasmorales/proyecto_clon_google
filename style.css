@@ -155,14 +155,15 @@
     border: 1px solid transparent;;
     border-radius: 4px;
     cursor: pointer;
+    color: #202124;
 }
 
 #lucky:hover {
-    border: 1px solid #dadce0
+    border: 1px solid #dadce0;
 }
 
 #search:hover {
-    border: 1px solid #dadce0
+    border: 1px solid #dadce0;
 }
 
 /*=====FOOTER=====*/
