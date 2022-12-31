@@ -1,6 +1,6 @@
 <h1 align="center">Clon de Google </h1>
 <h3 align="center">Como pryocto, cree el clon de Google, con un doodle de Dia del Padre</h3>
-<p>Puedes acceder al proyecto, dando click acá: <a href="https://jsebasmorales.github.io/proyecto_clon_google/"><img src="./assets/favicon.png" ></a></p>
+<p>Puedes acceder al proyecto, dando click acá: <a href="https://jsebasmorales.github.io/proyecto_clon_google/"><img src="./assets/favicon.png" width="40" ></a></p>
 <img src="./assets/readme/img_proyecto.png" alt="Imagen clon de google" width="240" />
 
 <h3 align="left">Lenjuajes usados:</h3>
